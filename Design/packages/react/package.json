@@ -2,7 +2,9 @@
   "name": "@ignite/react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
@@ -12,6 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "@ignite/tokens": "*",
+    "@ignite/ts-config": "*",
+    "@ignite/eslint-config": "*",
     "tsup": "^6.5.0",
     "typescript": "^4.9.4"
   }
